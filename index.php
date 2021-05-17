@@ -70,7 +70,7 @@ $posts = $obj->getVisiblePosts();
                         <td><?php echo $post["position_name"]; ?></td>
                         <td>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal<?php echo $cardCount; ?>">Details</button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal<?php echo $cardCount; ?>">More info</button>
                         
                             <!-- Modal -->
                             <div class="modal fade" id="modal<?php echo $cardCount; ?>" tabindex="-1" aria-labelledby="modalLabel<?php echo $cardCount; ?>" aria-hidden="true">
