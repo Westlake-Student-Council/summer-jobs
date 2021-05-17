@@ -56,15 +56,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Felix Chen">
-    <link rel="icon" href="../assets/images/dog.png">
+    <link rel="icon" href="../assets/images/logo.png">
 
     <title>Summer Jobs Admin Login</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../assets/libraries/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../stylesheets/signin.css" rel="stylesheet">
+    <link href="../assets/css/signin.css" rel="stylesheet">
 </head>
 
 <body class="text-center">
@@ -82,6 +82,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <span class="help-block"><?php echo $password_error; ?></span>
 
         <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+
+        <p class ="mt-2 mb-3"><a href="../index.php">Return to Main Page</a></p>
         <p class="mt-5 mb-3 text-muted">© 2021</p>
     </form>
 </body>
