@@ -1,0 +1,9 @@
+    private $post_id;
+    private $business_name;
+    private $position_name;
+    private $pay;
+    private $min_age;
+	private $job_application_link;
+    private $indeed_link;
+    private $location;
+    private $is_visible;
