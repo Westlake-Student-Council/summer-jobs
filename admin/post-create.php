@@ -13,10 +13,8 @@ if(!isset($_SESSION["user_loggedin"]) || $_SESSION["user_loggedin"] !== true) {
     exit;
 }
 
-$post_id = "";
-
 require "../classes/PostCreation.php";
-$obj = new PostCreation($post_id);
+$obj = new PostCreation();
 
 // Define variables and initialize with empty values
 $business_name = "";
@@ -193,7 +191,7 @@ if(isset($_POST["post_id"]) && !empty($_POST["post_id"])){
                             </div>
 
                             <input type="hidden" name="post_id" value="<?php echo $post_id; ?>"/>
-                            <input type="submit" class="btn btn-primary" value="Update!">
+                            <input type="submit" class="btn btn-primary" value="Create!">
                             <a href="dashboard.php" class="btn btn-default">Cancel</a>
                         </form>
                     </div>
@@ -201,16 +199,7 @@ if(isset($_POST["post_id"]) && !empty($_POST["post_id"])){
             </div>
         </div>
 
-        <!-- <?php include '../footer.php';?> -->
     </main>
-
-    <!-- Bootstrap Core JavaScript -->
-    <!-- ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="../assets/libraries/jquery-3.2.1.slim.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../assets/libraries/jquery-slim.min.js"><\/script>')</script>
-    <script src="../assets/libraries/popper.min.js"></script>
-    <script src="../assets/libraries/bootstrap.min.js"></script>
 
 </body>
 </html>
