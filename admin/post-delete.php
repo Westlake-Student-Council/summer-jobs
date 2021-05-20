@@ -47,7 +47,7 @@ if(isset($_POST["post_id"]) && !empty($_POST["post_id"])){
     <title>Delete Q&A</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <style type="text/css">
         .wrapper{
