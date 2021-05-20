@@ -103,7 +103,6 @@ class PostCreation
 				'position_name' => $this->position_name,
                 'pay' => $this->pay,
 				'min_age' => $this->min_age,
-                'question' => $this->question,
 				'job_application_link' => $this->job_application_link,
                 'indeed_link' => $this->indeed_link,
                 'location' => $this->location
