@@ -17,7 +17,7 @@ if(!isset($_SESSION["user_loggedin"]) || $_SESSION["user_loggedin"] !== true){
 if(isset($_POST["post_id"]) && !empty($_POST["post_id"])){
   
     require "../classes/PostDeletion.php";
-    $obj = new PostDeletion($_POST["dialogue_id"]);
+    $obj = new PostDeletion($_POST["post_id"]);
 
     if($obj->deletePost()) {
         header("location: dashboard.php");
