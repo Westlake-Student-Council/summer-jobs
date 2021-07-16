@@ -1,4 +1,8 @@
 <?php
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+
 ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 ini_set('log_errors',1);
@@ -15,7 +19,7 @@ $posts = $obj->getVisiblePosts();
     <meta name="description" content="">
     <meta name="author" content="Felix Chen">
 
-    <!-- <link rel="icon" type="image/png" href="assets/images/dog.png"> -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
 
     <title>Summer Jobs</title>
 
